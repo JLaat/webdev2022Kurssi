@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  const data = req.body;
+  const data = String(req.body);
   filesync.writeFileSync("./sanakirja.txt", data, {
     encoding: "utf8",
     flag: "a+",
