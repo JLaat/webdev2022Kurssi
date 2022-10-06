@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puhelinluettelo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-text">Puhelinluettelo</h1>
+    </header>
+
+    <main>
+      <div class="formContainer">
+        <form class="form-contact">
+          <h2>Add Contact</h2>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="number">Number</label>
+          <input type="text" name="number" id="number" />
+
+          <input type="button" value="Add" onclick="lisaaHenkilo()" />
+        </form>
+
+        <form class="search-form">
+          <h2>Search Contact</h2>
+          <label for="searchNumber">Number</label>
+          <input type="text" name="searchNumber" id="searchNumber" />
+
+          <input type="button" value="Search" onclick="etsiHenkilo()" />
+
+          <input
+            type="button"
+            value="Display All"
+            onclick="naytaKaikkiHenkilot()"
+          />
+        </form>
+      </div>
+      <table class="table-contacts">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Number</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

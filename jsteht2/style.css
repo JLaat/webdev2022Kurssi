@@ -1,0 +1,39 @@
+/* Asetetaan sivu täyttämään koko ruutu */
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color:burlywood;
+}
+
+/* Main content */
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Puhelinluettelo table */
+table {
+    border: solid black;
+}
+thead {
+    height: 2rem;
+    background-color: black;
+    color: deepskyblue;
+}
+tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hiukan etäisyyttä inputeille */
+input {
+    margin: .5em;
+}
